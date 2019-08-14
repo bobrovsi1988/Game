@@ -1,0 +1,25 @@
+ul{
+  list-style: none;
+
+  li{
+    margin: 10px;
+    line-height: 40px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    text-align: center;
+
+    a{
+      display: block;
+      color: orangered;
+      text-decoration: none;
+      font-size: xx-large;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.link-active{
+  color: black;
+
+}

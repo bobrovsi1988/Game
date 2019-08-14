@@ -61,7 +61,7 @@ const Card = ({ id, text, index, moveCard ,description, house}) => {
     const opacity = isDragging ? 0 : 1
     drag(drop(ref))
     return (
-        <div ref={ref} style={{ ...style, opacity }}>
+        <div ref={ref} style={{ ...style, opacity }} className="bg-light rounded">
             <People name={text} description={description} house={house}/>
         </div>
     )

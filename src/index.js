@@ -8,9 +8,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-import reducer from './reducers/Reducer';
+import data from './json/game-of-thrones';
+import Reducer from './reducers/Reducer';
 
-const store = createStore(reducer);
+const store = createStore(Reducer);
+store.dispatch({
+    type:"SET_STATE",
+    state: data
+});
 
 ReactDOM.render((
     <Provider store ={store}>

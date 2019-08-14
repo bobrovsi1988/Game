@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 
 import HomeList from './Components/Home/HomeList';
-import Peoples from './Components/Peoples/Peoples';
 import { Switch, Route } from 'react-router-dom';
 import {Container, Row, Col} from 'react-bootstrap';
 import { DndProvider } from 'react-dnd'
@@ -16,14 +15,10 @@ function App() {
               <Col md={4}>
                   <HomeList/>
               </Col>
-              <Col md={4}>
+              <Col md={6} className="">
                   <DndProvider backend={HTML5Backend}>
-
-
                       <Switch>
-                          {/*<Route exact path='/:homename' component={Peoples}/>*/}
                           <Route exact path='/:homename' component={Example}/>
-
                       </Switch>
                   </DndProvider>
 
