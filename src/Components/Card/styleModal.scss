@@ -1,14 +1,62 @@
 .modal{
-  background-color: white;
-  p{
-    font-size: 18px;
-    color: green;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+
+
+}
+.modal-head{
+  padding: 30px;
+  h2{
+    font-weight:900;
+    font-family: Calibri;
+    font-style: italic;
+    font-size: xx-large;
+    color: orangered;
+
   }
 }
-.test{
+label{
+  font-size: larger;
+  font-style: normal;
   color: orangered;
+  padding-top: 15px;
 }
+h3{
+  font: 22pt sans-serif;
+  color: orangered;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 span{
   font-size: larger;
   font-weight: bold;
+}
+.edit{
+  border:2px dotted orange;
+  border-radius: 10px;
+}
+
+.params{
+  border:2px dotted aquamarine;
+  border-radius: 10px;
+  p{
+    font-style: italic;
+    font-family: Arial;
+    line-height: 25px;
+    span{
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
 }
